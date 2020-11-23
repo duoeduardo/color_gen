@@ -7,7 +7,7 @@ const SingleColor = ({ rgb, weight, index, hexColor }) => {
   const hex = rgbToHex(...rgb);
   return (
     <article
-      className={`color`}
+      className={`color ${index > 10 &&  "color-light"} `}
       /* Se agrega el color rgb de la variable */
       style={{ backgroundColor: `rgb(${bcg})` }}
     >
